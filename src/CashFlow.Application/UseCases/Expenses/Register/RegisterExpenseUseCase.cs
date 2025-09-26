@@ -23,6 +23,7 @@ namespace CashFlow.Application.UseCases.Expenses.Register
             if (!result.IsValid)
             {
                 var erroMessages = result.Errors.Select(f => f.ErrorMessage).ToList();
+
                 throw new ErrorOnValidationException(erroMessages);
             }
         }
