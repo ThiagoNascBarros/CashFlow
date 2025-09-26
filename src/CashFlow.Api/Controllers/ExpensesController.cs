@@ -17,6 +17,6 @@ namespace CashFlow.Api.Controllers
             var response = useCase.Execute(request);
 
             return Created(string.Empty, response);
-        }
+        } 
     }
 }
